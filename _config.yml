@@ -1,1 +1,233 @@
-theme: jekyll-theme-cayman
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap{
+    width: 1000px;
+    font-family: "微軟正黑體";
+    background: white;
+    margin: 0 auto;
+    padding-right: 25px;
+}
+a{
+    text-decoration: none;
+}
+.followers{
+    background: #f6f6f6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.followers li{
+    padding: 5px 0;
+}
+.followers a{
+    display: block;
+    font-size: 15px;
+    padding: 0 10px;
+}
+.followers img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.followers .FB{
+    color: #4460a0;
+    border-right: 1px solid #cccccc;
+}
+.followers .Twitter{
+    color: #87caf0;
+}
+.logo h2 a{
+    width: 224px;
+    height: 50px;
+    display: block;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.logo ul{
+    display: flex;
+}
+.logo li a{
+    display: block;
+    font-size: 15px;
+    color: #00cc99;
+    padding: 20px;
+}
+.logo li a:hover{
+    border-bottom: 3px solid #00cc99;
+}
+.logo{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    height: 346px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+}
+.banner h2{
+    width: 1000px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.5;
+    background-color: rgba(48, 46, 46, 0.3);
+    padding: 35px 0 35px 25px;
+}
+.course{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+.course .content{
+    width: 305px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 3px #d6d6d6;
+    margin-right: 25px;
+}
+.content h2{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.content p{
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 25px 25px 25px;
+}
+.content ul{
+    list-style-type: disc;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 25px 25px 25px;
+}
+.comparison{
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 0;
+}
+.details{
+    font-size: 15px;
+    text-align: left;
+    margin: 0 60px 60px 80px;
+}
+.details tr{
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+.details th,.details td{
+    padding: 10px 70px 10px 30px;
+}
+.details .green{
+    color: #42b392;
+}
+.details th{
+    background: #f7f7f7;
+}
+form{
+    height: 405px;
+    background: linear-gradient(#00644b,#009872);
+    position: relative;
+}
+form h2{
+    color: white;
+    font-size: 25px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 30px 0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.container .user{
+    width: 460px;
+    height: 30px;
+    background: white;
+    margin-bottom: 15px;
+}
+.container label{
+    display: block;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.container ul {
+    padding: 0 15px;
+}
+.container .submit{
+    width: 70px;
+    height: 35px;
+    background: #00cc99;
+    color: white;
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+}
+textarea{
+    margin: 0 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.footer span{
+    color: #e3458a;
+}
